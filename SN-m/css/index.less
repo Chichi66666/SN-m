@@ -1,0 +1,267 @@
+a,
+a:hover,
+a:active,
+a:visited,
+a:link,
+a:focus {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  background: none;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+body {
+  min-width: 320px;
+  max-width: 750px;
+  width: 10rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: Arial, Helvetica;
+  background: #F2F2F2;
+}
+
+.mask {
+  width: 10rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background-color: rgba(0, 0, 0, .4);
+
+  img {
+    width: 100%;
+    transform: translateY(-50%);
+  }
+}
+
+nav {
+  width: 10rem;
+  background-image: url("../upload/nav_bg.png");
+  background-size: cover;
+
+  .nav_top {
+    width: 9.093rem;
+    margin: 0 0.453rem;
+    height: 1.173rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & a {
+      display: flex;
+    }
+
+    & a img {
+      width: 0.48rem;
+    }
+
+    & a:nth-child(2) img {
+      width: 5.2rem;
+    }
+  }
+
+  .nav_down {
+    width: 9.093rem;
+    height: 1.227rem;
+    margin: 0 0.453rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .search_input_info {
+      border: 0;
+      outline: none;
+      width: 100%;
+      height: 0.537rem;
+      padding: 0.133rem;
+      border-radius: 4rem;
+      font-size: 0.333rem;
+    }
+  }
+}
+
+.menu_container {
+  width: 10rem;
+  height: 4.267rem;
+  background: url("../upload/bg.png") no-repeat;
+  background-size: 10rem 4.267rem;
+}
+
+.menu {
+  width: 9.5rem;
+  height: 4.267rem;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  //使用图片进行替代了圆角矩形
+  /*    background-color: white;
+      border-radius: .2rem;*/
+
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1.9rem;
+    height: 1.893rem;
+    color: #666666;
+  }
+
+  a span {
+    font-size: 0.293rem;
+  }
+
+  a img {
+    width: 1.12rem;
+    height: 1.12rem;
+  }
+}
+
+.activities {
+  width: 10rem;
+
+  a {
+    float: left;
+  }
+
+  a img {
+    width: 3.333rem;
+    height: 2.933rem;
+  }
+}
+
+.re_login {
+  position: fixed;
+  width: 10rem;
+  bottom: 1.333rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+footer {
+  width: 10rem;
+  height: 1.333rem;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+
+  a {
+    color: #666666;
+    font-size: 0.267rem;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a img {
+    width: 0.64rem;
+    height: 0.64rem;
+  }
+
+  a:nth-child(1) span {
+    font-weight: 700;
+    color: black;
+  }
+
+}
+
+.show {
+  width: 10rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2.667rem;
+
+  .left {
+    width: 4.56rem;
+    height: 2.8rem;
+    background: url("../upload/bg1.png") no-repeat;
+    background-size: contain;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    position: relative;
+    margin-left: 0.2rem;
+
+    img {
+      width: 2.053rem;
+      height: 2.053rem;
+      padding-top: 0.667rem;
+    }
+
+    span {
+      width: 1.2rem;
+      height: 0.373rem;
+      font-size: 0.293rem;
+      background-color: pink;
+      border-radius: .3rem;
+      color: red;
+      position: absolute;
+      bottom: 0.133rem;
+      left: 0.4rem;
+      text-align: center;
+      line-height: 0.373rem;
+
+      &:nth-of-type(2) {
+        left: 60%;
+      }
+    }
+  }
+
+  .right {
+    width: 10rem;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+
+    a {
+      display: block;
+      position: relative;
+      img{
+        width: 1.813rem;
+        height: 1.813rem;
+        padding: 0.667rem 0 0 0.2rem;
+      }
+      span{
+        width: 1.84rem;
+        border-radius: 0.92rem;
+        text-align: center;
+        line-height: 0.373rem;
+        height: 0.373rem;
+        font-size: 0.293rem;
+        background-color: #fffde7;
+        color: orange;
+        left: 0.25rem;
+        bottom: 0.133rem;
+        position: absolute;
+      }
+    }
+
+    a:first-child {
+      width: 2.28rem;
+      height: 2.8rem;
+      background: url("../upload/bg2.png") no-repeat;
+      background-size: cover;
+    }
+
+    a:last-child {
+      width: 2.28rem;
+      height: 2.8rem;
+      background: url("../upload/bg3.png") no-repeat;
+      background-size: cover;
+    }
+  }
+}
